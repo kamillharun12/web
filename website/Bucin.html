@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buat Kamu yang Aku Sayang</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ff99cc, #ffccff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 0;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .love {
+      font-size: 5em;
+      color: red;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .btn {
+      background-color: white;
+      color: pink;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff66a3;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="love">❤️</div>
+  <h1>Hai Kamu!</h1>
+  <p>Terima kasih sudah hadir di hidup aku 🌹</p>
+  <p>Jangan pernah bosan ya sama aku 😚</p>
+  <button class="btn" onclick="alert('Aku sayang kamu 💖')">Klik kalau kamu juga sayang!</button>
+</body>
+</html>
